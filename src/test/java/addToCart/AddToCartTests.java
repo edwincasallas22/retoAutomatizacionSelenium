@@ -3,9 +3,8 @@ package addToCart;
 import base.BaseTests;
 import org.junit.jupiter.api.Test;
 import pages.AddToCart;
-import pages.HomePage;
-
 import static org.testng.Assert.assertEquals;
+
 
 public class AddToCartTests extends BaseTests {
     @Test
