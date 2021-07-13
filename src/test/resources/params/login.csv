@@ -1,0 +1,17 @@
+email,password,error1,error2
+"","",There is 1 error,An email address required.
+22,"",There is 1 error,Invalid email address.
+"",123,There is 1 error,An email address required.
+edwin,"",There is 1 error,Invalid email address.
+edwin22.com,"",There is 1 error,Invalid email address.
+edwin22@hotmail,"",There is 1 error,Invalid email address.
+edwin22hotmail.com,"",There is 1 error,Invalid email address.
+edwin22@hotmail.com,"",There is 1 error,Password is required.
+edwin22@hotmail.com,12345,There is 1 error,Authentication failed.
+casallas22@hotmial.com,123,There is 1 error,Invalid password.
+casallas22@hotmial.com,1234567,There is 1 error, Authentication failed.
+
+
+
+
+
