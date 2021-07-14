@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import pages.HomePage;
 
 
@@ -14,23 +15,29 @@ import pages.HomePage;
 
 public class BaseTests {
 
-    private WebDriver driver;
+    private WebDriver driverChrome;
+    private WebDriver driverEdge;
     protected HomePage homePage;
 
     @BeforeAll
     public  void setUp(){
 
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("http://automationpractice.com/index.php");
-        homePage = new HomePage(driver);
+        driverChrome = new ChromeDriver();
+        driverChrome.get("http://automationpractice.com/index.php");
+        homePage = new HomePage(driverChrome);
+
+        // Codigo para hacer las pruebas con el driver de Microsoft Edge
+       /* System.setProperty("webdriver.edge.driver", "resources/msedgedriver.exe");
+        driverEdge = new EdgeDriver();
+        driverEdge.get("http://automationpractice.com/index.php");
+        homePage = new HomePage(driverEdge);*/
 
     }
-
-
     @AfterAll
     public void tearDown(){
-        driver.quit();
+       // driverEdge.quit();
+        driverChrome.quit();
     }
 
 }

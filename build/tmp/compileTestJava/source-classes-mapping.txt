@@ -1,6 +1,6 @@
-login/LoginTests.java
- login.LoginTests
-base/BaseTests.java
- base.BaseTests
 addToCart/AddToCartTests.java
  addToCart.AddToCartTests
+base/BaseTests.java
+ base.BaseTests
+login/LoginTests.java
+ login.LoginTests
